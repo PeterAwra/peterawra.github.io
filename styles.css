@@ -1,90 +1,288 @@
-header {
-    background-color: #392d12;
-    min-height: 100px;
-    align-content: center;
-}
-
-header:hover {
-    background-color: #444;
-}
-
-header a {
-    position: center;
-    text-align: center;
-    width: min-content;
-    margin: 10px;
-    color: #dddddd;
-}
 
 body {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    background: linear-gradient(90deg, #010066, #006498, #00cccb);
-    color: linen;
-    height: border-box 100%;
-    font-family: "Comic Sans MS", serif;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-.body {
-    align-content: center;
-    border-radius: 5px;
-    border: 2px solid #333;
-    background: #26201d;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.div {
-    align-content: center;
-    border-radius: 5px;
-    border: 2px solid #333;
-    background: black;
-    color: black;
-    display: inline-flex;
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-blk;
 }
 
-.block {
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 20px;
-    background: linear-gradient(#919187, #ddd, #eee);
-    margin: 10px;
-    color: #010066;
-    display: inline-flex;
-}
-
-.block:hover {
-    background: linear-gradient(#eeebeb, #eee, #fff);
-}
-
-.icon {
-    border-radius: 10px;
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    align-self: center;
-}
 
 .shadow {
-    margin: 5px;
-    box-shadow: 2px 2px 2px 2px #444444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+header.shadow {
+    background-color: #fff;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    cursor: pointer;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+header h1 a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+
+article.block {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex: 1 1 300px;
+    max-width: 450px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article.block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.game-link {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+
+img.icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+
+.game-info {
+    flex-grow: 1;
+}
+
+.game-info h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    color: #0056b3;
+}
+
+.game-info p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+
+
 footer {
-    background-color: #392d12;
-    min-height: 100px;
-    align-content: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
 }
 
 footer h3 {
-    position: center;
-    text-align: center;
-    margin: 10px;
-    color: #eeeeee;
+    text_color: #fafafa
+
 }
 
-footer a {
-    position: center;
-    text-align: center;
-    margin: 10px;
-    color: #eeeeee;
+footer time {
+
 }
+
+
+@media (max-width: 768px) {
+    header.shadow {
+        padding: 10px 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .game-gallery {
+        gap: 15px;
+    }
+
+    .game-link {
+    }
+
+    img.icon {
+    }
+
+    .game-info h2 {
+        font-size: 1.1em;
+    }
+
+     .game-info p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+     article.block {
+        flex-basis: 100%;
+    }
+}
+     body {
+         background-color: #f9f9f9;
+     }
+
+     .body {
+         max-width: 960px;
+         margin: 0 auto;
+         padding: 20px;
+         background-color: #fff;
+         border-radius: 8px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
+
+     .body > div {
+         margin-bottom: 20px;
+     }
+
+     .body > div:last-child {
+         margin-bottom: 0;
+     }
+
+     .body img[alt="2048"] {
+         max-width: 100%;
+         height: auto;
+         border-radius: 5px;
+         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+     }
+
+     .body div[style*="text-align: center;margin:"] img {
+         width: auto;
+         height: 60px;
+     }
+
+     .body div[style*="padding: 50px;font-size:"] {
+         padding: 30px;
+         font-size: 1em;
+         color: #555;
+         line-height: 1.7;
+         border: 1px solid #eee;
+         border-radius: 5px;
+         background-color: #f4f4f4;
+     }
+
+     .body div[style*="padding: 50px;font-size:"] br {
+         margin-bottom: 0.5em;
+     }
+
+     .body div[style*="display: block;width:available;text-align: center"] {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 10px;
+     }
+
+     .body div[style*="display: block;width:available;text-align: center"] img {
+         width: 180px;
+         height: auto;
+         border-radius: 8px;
+         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+     }
+
+     footer {
+         text-align: center;
+         padding: 20px 0;
+         margin-top: 30px;
+         font-size: 0.9em;
+         color: #777;
+     }
+
+     footer h3 {
+         margin: 0;
+     }
+
+     footer a {
+         color: #fafafa;
+         text-decoration: underline;
+     }
+
+      footer p {
+         color: #fafafa;
+     }
+
+     footer a:hover {
+         color: #999;
+         text-decoration: underline;
+     }
+
+     @media (max-width: 768px) {
+         .body {
+             padding: 15px;
+         }
+
+         .body div[style*="padding: 30px;font-size:"] {
+             padding: 20px;
+             font-size: 0.95em;
+         }
+
+         .body div[style*="display: block;width:available;text-align: center"] img {
+             width: 140px;
+         }
+     }
+
+     @media (max-width: 480px) {
+         header h1 {
+             font-size: 1.5em;
+         }
+
+         .body div[style*="display: block;width:available;text-align: center"] img {
+             width: 100%;
+             max-width: 200px;
+         }
+     }

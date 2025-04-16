@@ -2,42 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Block Puzzle</title>
     <link rel="icon" href="media/blockpuzzle/icon.jpg">
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<header onclick=window.location.href="index.html">
-    <a href="index.html"><h1>Games by Peter Awra</h1></a>
+<header class="shadow">
+    <h1><a href="index.html">Games by Peter Awra</a></h1>
 </header>
 <div class="body">
-    <div style="display: inherit;padding: 30px;text-align: center">
-        <img style="border-radius: 5px;width: 800px" src="media/blockpuzzle/1024_500.png" alt="2048">
+    <div>
+        <img src="media/blockpuzzle/1024_500.png" alt="2048">
     </div>
     <div style="text-align: center;margin: 10px">
-        <img alt="Legible badge" style="cursor: pointer"
-             onclick=window.location.href="https://play.google.com/store/apps/details?id=com.stud.awra.blockpuzzle&hl=en_US&gl=US"
-             src="https://lh3.googleusercontent.com/qF9r3ZjtgG-qyHdmjecArtKiulz1gmwL_xl9R3_fzk6igSeoN0wYbJSKEX5d_fxJRwYZJpHbqcLB3i9atl-9dOfUl9an7U43TfZ9PtQ=s0">
+        <a href="https://play.google.com/store/apps/details?id=com.stud.awra.blockpuzzle&hl=en_US&gl=US" target="_blank">
+            <img alt="Get it on Google Play"
+                 src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                 style="height: 60px; cursor: pointer;">
+        </a>
     </div>
-    <div style="padding: 50px;font-size: larger;color: #dddddd">
-        Fill the board with different blocks so that there are no gaps and form vertical or horizontal lines that will collapse and make room for new blocks. Keep your board clear for as long as possible and use as many blocks as possible in this simple yet addictive puzzle game!
+    <div style="padding: 30px;font-size: 1em;color: #555;line-height: 1.7;border: 1px solid #eee;border-radius: 5px;background-color: #f4f4f4;">
+        Fill the board with different blocks so that there are no gaps and form vertical or horizontal lines
+        that will collapse and make room for new blocks. Keep your board clear for as long as possible and
+        use as many blocks as possible in this simple yet addictive puzzle game!
     </div>
-    <div style="display: block;width:available;text-align: center">
-        <img style="width: 200px;height: auto;border-radius: 10px;margin: 2px" src="media/blockpuzzle/screen_1.png">
-        <img style="width: 200px;height: auto;border-radius: 10px;margin: 2px" src="media/blockpuzzle/screen_3.png">
-        <img style="width: 200px;height: auto;border-radius: 10px;margin: 2px" src="media/blockpuzzle/screen_4.png">
-        <img style="width: 200px;height: auto;border-radius: 10px;margin: 2px" src="media/blockpuzzle/screen_5.png">
+    <div style="display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;">
+        <img style="width: 180px;height: auto;border-radius: 8px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);"
+             src="media/blockpuzzle/screen_1.png" alt="Block Puzzle Screenshot 1">
+        <img style="width: 180px;height: auto;border-radius: 8px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);"
+             src="media/blockpuzzle/screen_3.png" alt="Block Puzzle Screenshot 2">
+        <img style="width: 180px;height: auto;border-radius: 8px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);"
+             src="media/blockpuzzle/screen_4.png" alt="Block Puzzle Screenshot 3">
+        <img style="width: 180px;height: auto;border-radius: 8px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);"
+             src="media/blockpuzzle/screen_5.png" alt="Block Puzzle Screenshot 4">
     </div>
-    <div style="display: block;width:available;text-align: center;margin-bottom: 50px">
-        <img style="width: 200px;height: auto;border-radius: 10px;margin: 2px" src="media/blockpuzzle/screen_6.png">
-        <img style="width: 200px;height: auto;border-radius: 10px;margin: 2px" src="media/blockpuzzle/screen_7.png">
-        <img style="width: 200px;height: auto;border-radius: 10px;margin: 2px" src="media/blockpuzzle/screen_8.png">
-        <img style="width: 200px;height: auto;border-radius: 10px;margin: 2px" src="media/blockpuzzle/screen_2.png">
+    <div style="display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;margin-bottom: 50px">
+        <img style="width: 180px;height: auto;border-radius: 8px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);"
+             src="media/blockpuzzle/screen_6.png" alt="Block Puzzle Screenshot 5">
+        <img style="width: 180px;height: auto;border-radius: 8px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);"
+             src="media/blockpuzzle/screen_7.png" alt="Block Puzzle Screenshot 6">
+        <img style="width: 180px;height: auto;border-radius: 8px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);"
+             src="media/blockpuzzle/screen_8.png" alt="Block Puzzle Screenshot 7">
+        <img style="width: 180px;height: auto;border-radius: 8px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);"
+             src="media/blockpuzzle/screen_2.png" alt="Block Puzzle Screenshot 8">
     </div>
 </div>
 
 <footer>
-    <h3><a href="https://doc-hosting.flycricket.io/block-puzzle-classic-game-privacy-policy/a6fbb009-863a-4a19-ba50-c4aad04d6137/privacy">Privacy Policy</a>></h3>
+    <h3>
+        <a href="https://doc-hosting.flycricket.io/block-puzzle-classic-game-privacy-policy/a6fbb009-863a-4a19-ba50-c4aad04d6137/privacy"
+           target="_blank">Privacy Policy</a>
+    </h3>
 </footer>
 </body>
 </html>

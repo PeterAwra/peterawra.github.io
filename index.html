@@ -1,48 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <head>
     <meta charset="UTF-8">
-    <title>Game by Peter Awra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="A collection of browser games by Peter Awra, including 1-19 Number Game, Sudoku Puzzle Free, 2048, and Block Puzzle.">
+    <title>Games by Peter Awra</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 <header class="shadow">
-    <a href="index.html"><h1>Games by Peter Awra</h1></a>
+    <h1><a href="index.html">Games by Peter Awra</a></h1>
 </header>
-<div class="body" style="display: inline-flex">
-    <div class="block shadow" onclick=window.location.href="1-19.html">
-        <img class="icon shadow" src="media/1-19/icon.jpg" alt="1-19 Number Game">
-        <div style="margin: 30px">
-            <h1>1-19 Number Game</h1>
-            <p>Cross out all the numbers</p>
-        </div>
-    </div>
-    <div class="block shadow" onclick=window.location.href="sudoku.html">
-        <img class="icon shadow" src="media/sudoku/icon.png" alt="1-19 Number Game">
-        <div style="margin: 30px">
-            <h1>Sudoku Puzzle Free</h1>
-            <p>Keep your mind in good shape with Sudoku</p>
-        </div>
-    </div>
-</div>
-<div class="body" style="display: inline-flex">
-    <div class="block shadow" onclick=window.location.href="2048.html">
-        <img class="icon shadow" src="media/2048/icon.png" alt="2048">
-        <div style="margin: 30px">
-            <h1>2048</h1>
-            <p>Connect the numbers and get to the tile 2048</p>
-        </div>
-    </div>
-    <div class="block shadow" onclick=window.location.href="blockpuzzle.html">
-        <img class="icon shadow" src="media/blockpuzzle/icon.png" alt="Block Puzzle">
-        <div style="margin: 30px">
-            <h1>Block Puzzle</h1>
-            <p>Easy and addictive game, just fill the board with different blocks without gaps</p>
-        </div>
-    </div>
-</div>
-<footer>
-    <p></p>
-</footer>
+
+<main>
+    <section class="game-gallery">
+
+        <article class="block shadow">
+            <a href="1-19.html" class="game-link">
+                <img class="icon shadow" src="media/1-19/icon.jpg" alt="Icon for 1-19 Number Game"> <div class="game-info">
+                <h2>1-19 Number Game</h2> <p>Cross out all the numbers.</p> </div>
+            </a>
+        </article>
+
+        <article class="block shadow">
+            <a href="sudoku.html" class="game-link">
+                <img class="icon shadow" src="media/sudoku/icon.png" alt="Icon for Sudoku Puzzle Free"> <div class="game-info">
+                <h2>Sudoku - 4x4 6x6 9x9 16x16</h2>
+                <p>Keep your mind in good shape with Sudoku.</p> </div>
+            </a>
+        </article>
+
+        <article class="block shadow">
+            <a href="2048.html" class="game-link">
+                <img class="icon shadow" src="media/2048/icon.png" alt="Icon for 2048 game"> <div class="game-info">
+                <h2>2048</h2>
+                <p>Connect the numbers and get to the tile 2048.</p> </div>
+            </a>
+        </article>
+
+        <article class="block shadow">
+            <a href="blockpuzzle.html" class="game-link">
+                <img class="icon shadow" src="media/blockpuzzle/icon.png" alt="Icon for Block Puzzle game"> <div class="game-info">
+                <h2>Block Puzzle</h2>
+                <p>Easy and addictive game, just fill the board with different blocks without gaps.</p> </div>
+            </a>
+        </article>
+
+    </section>
+    <footer>
+        <p>&copy; <time datetime="2023">2023</time>-<time datetime="2025">2025</time> Peter Awra. Усі права захищено.</p>
+    </footer>
+</main>
+
 </body>
 </html>
